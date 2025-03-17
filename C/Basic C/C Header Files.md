@@ -53,7 +53,7 @@ typedef struct Data_t{
 union DataUnion{
 	char* name;
 	short code;
-}  // also valid
+};  // also valid
 
 #endif
 ```
