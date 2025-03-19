@@ -4,16 +4,18 @@ Most commands look like:
 ```bash
 command -options arguments
 ```
-## Useful commands
-### Launch command with elevated privileges (sudo):
+## Useful Commands Sorted By Function
+### Executing Programs
+#### Launch command with elevated privileges (sudo):
 ```bash
-sudo # commands
+sudo (commands)
 ```
-### Print working directory (pwd):
+### Navigating System Files
+#### Change directory to another address (cd):
 ```bash
-pwd
+cd (address)
 ```
-#### Shortcuts
+##### Shortcuts
 Change to home:
 ```bash
 cd
@@ -24,48 +26,54 @@ cd -
 ```
 Change to home of a user:
 ```bash
-cd ~#user_name
+cd ~(user_name)
 ```
-### Change directory to another address (cd):
+
+#### Determine file type (file):
 ```bash
-cd # address
+file (filename)
 ```
-### List directory contents (ls):
+#### List directory contents (ls):
 ```bash
-ls
+ls (dir_1) (dir_2) (dir_n)
 ```
-Multiple files cand be accessed at the same time by specifying the paths in the command
-Show hidden files:
+Multiple files can be accessed at the same time by specifying the paths in the command
+
+##### Options
+| Name | Functionality                    |
+| ---- | -------------------------------- |
+| -a   | Shows hidden files               |
+| -l   | Shows more details (long format) |
+
+
+#### Print working directory (pwd):
 ```bash
-ls -a
+pwd
 ```
-More details (long format):
+
+#### View file contents (less):
 ```bash
-ls -l
+less (filename)
 ```
-### Determine file type (file):
+## System File Operations
+#### Copy file (cp):
 ```bash
-file # filename
+cp (items) (location)
 ```
-### View file contents (less):
+
+#### Make directory (mkdir):
 ```bash
-less # filename
+mkdir (dir_name)
 ```
-### Copy file (cp):
+
+#### Move file (mv):
 ```bash
-cp # items location
+mv (filename) (location)
 ```
-### Move file (mv):
+
+#### Remove file (rm):
 ```bash
-mv # filename location
-```
-### Remove file (rm):
-```bash
-rm # filename
-```
-### Make directory (mkdir):
-```bash
-mkdir # directoryname
+rm (filename)
 ```
 ## Wildcards
 - **\*** - matches any character
