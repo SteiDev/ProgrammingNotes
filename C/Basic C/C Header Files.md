@@ -87,6 +87,7 @@ To link headers to source files (.c, .cpp as well as other types) the header mus
 // source code
 ```
 Where **header_name** is the name of the header file
+
 *Note: if the header is not location dependent (most often for system directory headers), use <> instead of ""*
 ```C
 #include <location_independent.h>  // system header
